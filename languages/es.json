@@ -1,0 +1,35 @@
+{
+    "menu": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "portfolio":"Portafolio",
+        "contact":"Contacto"
+    },
+    "home": {
+        "title": "Hola, yo soy",
+        "description": "Desarrollador de aplicaciones móviles Front End con un enfoque especial en el framework Flutter, haciendo uso de patrones de presentación como MVP, arquitecturas como Clean Architecture, métodos como Clean Code y Atomic Design, ISOS de calidad como la 25010 y marcos de trabajo como SCRUM, dando como resultado un producto de calidad y amigable al usuario final.",
+        "button": "Descargar CV",
+        "professionalOne":"Desarrollo móvil",
+        "professionalTwo":"Ingeniero en sistemas",
+        "professionalThree":"",
+        "professionalFour":""
+    },
+    "about": {
+        "first-title": "Sobre ",
+        "second-title": "Mí",
+        "subtitle": "Hola, ¡estoy aquí para ayudarte con tu próximo proyecto!",
+        "description": "Con mi experiencia como desarrollador de aplicaciones móviles Front End con un enfoque especial en el framework Flutter, haciendo uso de patrones de presentación como MVP, arquitecturas como Clean Architecture, métodos como Clean Code y Atomic Design, ISOS de calidad como la 25010 y marcos de trabajo como SCRUM, dando como resultado un producto de calidad y amigable al usuario final.",
+        "button": "Seguir Leyendo"
+    },
+    "portfolio": {
+        "first-title": "Proyectos ",
+        "second-title": "Recientes",
+        "first-project-title": "Comercio electrónico Navigation",
+        "first-project-description": "Tienda de catálogos de ropa y gestión de inventarios.",
+        "second-project-title": "Aplicación de películas",
+        "second-project-description": "Mostrar datos importantes de las últimas películas en cine por medio de la API The Movie Database (TMDB).",
+        "third-project-title": "Aplicación de libros",
+        "third-project-description": "Mostrar y consultar libros, además, de ver sus características principales y puntuaciones por medio de una API."
+    }
+}

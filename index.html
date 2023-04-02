@@ -8,7 +8,7 @@
     <!--Box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Custom css-->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body> 
 
@@ -17,14 +17,23 @@
         <a href="#" class="logo">Portfolio</a>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" data-section="menu" data-value="home">Home</a>
+            <a href="#about" data-section="menu" data-value="about">About</a>
+            <a href="#experience" data-section="menu" data-value="experience">Experience</a>
+            <a href="#portfolio" data-section="menu" data-value="portfolio">Portfolio</a>
+            <a href="#contact" data-section="menu" data-value="contact">Contact</a>
         </nav>
 
         <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="flags" id="flags">
+            <div class="flags__item" data-language="es">
+                <img src="/assets/icons/co.svg" alt="">
+            </div>
+            <div class="flags__item" data-language="en">
+                <img src="/assets/icons/us.svg" alt="">
+            </div>
+        </div>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
@@ -34,34 +43,34 @@
     <!--home section design-->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, I am</h3>
+            <h3 data-section="home" data-value="title">Hello, I am</h3>
             <h1>Jose Lamilla</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo pariatur dolore excepturi, at maiores, incidunt iure quo tempore veritatis quae officia facere tempora aliquam laudantium corrupti atque laboriosam, soluta quas.</p>
+            <p data-section="home" data-value="description">Front End mobile application developer with a special focus on the Flutter framework, making use of presentation patterns like MVP, architectures like Clean Architecture, methods like Clean Code and Atomic Design, quality ISOS like 25010 and frameworks like SCRUM, resulting in a quality and user friendly product.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-github' ></i></a>
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
                 <a href="#"><i class='bx bxl-medium' ></i></a>
                 <a href="#"><i class='bx bx-envelope' ></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>    
+            <a href="#" class="btn" data-section="home" data-value="button">Download CV</a>    
         </div>
         <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
                     <i class='bx bx-code-alt' ></i>
-                    <h3>Mobile Developer</h3>
+                    <h3 data-section="home" data-value="first-professional">Mobile Developer</h3>
                 </div>
                 <div class="profession" style="--i:1;">
                     <i class='bx bx-code-alt' ></i>
-                    <h3>Flutter</h3>
+                    <h3 data-section="home" data-value="second-professional">Systems engineer</h3>
                 </div>
                 <div class="profession" style="--i:2;">
                     <i class='bx bx-code-alt' ></i>
-                    <h3>Dart</h3>
+                    <h3 data-section="home" data-value="third-professional"></h3>
                 </div>
                 <div class="profession" style="--i:3;">
                     <i class='bx bx-code-alt' ></i>
-                    <h3>Ing. Systems</h3>
+                    <h3 data-section="home" data-value="fourth-professional"></h3>
                 </div>
                 <div class="circle"></div>
             </div>
@@ -70,7 +79,7 @@
         </div>
 
         <div class="home-img">
-            <img src="images/image.png" alt="">
+            <img src="assets/images/home.png" alt="">
         </div>
     </section>
 
@@ -78,72 +87,52 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/about.png" alt="">
+            <img src="/assets/images/about.png" alt="">
         </div>
 
         <div class="about-content">
-            <h2 class="heading"> About <span>Me</span></h2>
-            <h3>Hi, I'm Here To Help Your Next Project!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora, quaerat nesciunt ea quae aperiam hic quis dolores quos corporis accusantium dicta voluptates exercitationem voluptas. Voluptate omnis mollitia quae est consequatur, amet doloribus animi veniam porro delectus dolore? Ratione, repellat?</p>
-            <a href="#" class="btn">Read More</a>
+            <h2 class="heading" data-section="about" data-value="first-title"> About 
+                <span data-section="about" data-value="second-title">Me</span>
+            </h2>
+            <h3 data-section="about" data-value="subtitle">Hi, I'm Here To Help Your Next Project!</h3>
+            <p data-section="about" data-value="description">With my experience as a Front End mobile application developer with a special focus on the Flutter framework, making use of presentation patterns like MVP, architectures like Clean Architecture, methods like Clean Code and Atomic Design, quality ISOS like 25010 and frameworks like SCRUM, resulting in a quality and friendly product to the end user.</p>
+            <a href="#" class="btn" data-section="about" data-value="button">Read More</a>
         </div>
     </section>
 
-    <!-- Services Section Design-->
+    <!-- experience Section Design-->
 
     <!--minutes 38:00-->
 
     <!-- Portfolio Section Design -->
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+        <h2 class="heading" data-section="portfolio" data-value="first-title" >Recent 
+            <span data-section="portfolio" data-value="second-title">Projects</span>
+        </h2>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
+                <img src="assets/images/portfolio1.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur veritatis.</p>
+                    <h4 data-section="portfolio" data-value="first-project-title" >E-commerce Navigation</h4>
+                    <p data-section="portfolio" data-value="first-project-description" >Apparel catalog and inventory management store</p>
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
+                <img src="assets/images/portfolio1.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur veritatis.</p>
+                    <h4 data-section="portfolio" data-value="second-project-title" >Film application</h4>
+                    <p data-section="portfolio" data-value="second-project-description" >Display important data of the latest movies in cinema through The Movie Database API (TMDB).</p>
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
+                <img src="assets/images/portfolio1.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur veritatis.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur veritatis.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur veritatis.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur veritatis.</p>
+                    <h4 data-section="portfolio" data-value="third-project-title" >Book application</h4>
+                    <p data-section="portfolio" data-value="third-project-description" >Display and query books, as well as view their main features and scores through an API.</p>
                     <a href="#"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
@@ -174,7 +163,7 @@
 
     <!-- custom js-->
 
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
     
 </body>
 </html>

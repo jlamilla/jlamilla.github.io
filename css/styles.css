@@ -104,6 +104,22 @@ body{
     opacity: .9;
 }
 
+.flags{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags__item{
+    width: 30px;
+}
+
+.flags__img{
+    display: block;
+    cursor: pointer;
+}
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -286,7 +302,7 @@ section{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 440px;
+    width: 100rem;
     pointer-events: none;
 }
 

@@ -1,0 +1,35 @@
+{
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "portfolio":"Portfolio",
+        "contact":"Contact"
+    },
+    "home": {
+        "title": "Hello, I am",
+        "description": "Front End mobile application developer with a special focus on the Flutter framework, making use of presentation patterns like MVP, architectures like Clean Architecture, methods like Clean Code and Atomic Design, quality ISOS like 25010 and frameworks like SCRUM, resulting in a quality and user friendly product.",
+        "button": "Download CV",
+        "first-professional":"Mobile Developer",
+        "second-professional":"Systems engineer",
+        "third-professional":"",
+        "fourth-professional":""
+    },
+    "about": {
+        "first-title": "About ",
+        "second-title": "Me",
+        "subtitle": "Hi, I'm Here To Help Your Next Project!",
+        "description": "With my experience as a Front End mobile application developer with a special focus on the Flutter framework, making use of presentation patterns like MVP, architectures like Clean Architecture, methods like Clean Code and Atomic Design, quality ISOS like 25010 and frameworks like SCRUM, resulting in a quality and friendly product to the end user.",
+        "button": "Read More"
+    },
+    "portfolio": {
+        "first-title": "Recent ",
+        "second-title": "Projects",
+        "first-project-title": "E-commerce Navigation",
+        "first-project-description": "Apparel catalog and inventory management store",
+        "second-project-title": "Film application",
+        "second-project-description": "Display important data of the latest movies in cinema through The Movie Database API (TMDB).",
+        "third-project-title": "Book application",
+        "third-project-description": "Display and query books, as well as view their main features and scores through an API."
+    }
+}
